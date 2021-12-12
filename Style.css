@@ -1,0 +1,18 @@
+
+ 
+  
+  /* Style the image inside the centered container, if needed */
+  .main-image {
+    width: 300px;
+    border-radius: 50%;
+  }
+   .info h2 {
+      color:rgb(6, 3, 20);
+      text-align: left;
+      left: 10%;
+    }
+
+    .centered {
+      display: flex;
+    align-items: center;
+    }

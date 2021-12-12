@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <!-- 
+     Full Name:   Sheida tajali
+     Student ID:  116954165
+    -->
+    <meta charset="UTF-8" <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=90%">
+    <title>students scores</title>
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+</head>
+<style>
+    body {
+        margin: auto;
+        height: 800px;
+
+    }
+</style>
+
+<body>
+
+    <div class="container h-100">
+        <nav class="navbar navbar-inverse " style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Sheida Tajali</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Main.html"><i class="fa fa-home"></i> HOME</a></li>
+                    <li><a href="resume.html"><i class="fa fa-id-card"></i> Resume</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <img class="card-img-top" src="contact.jpg" style="height: 300px;" alt="Card image cap">
+
+        <section class="mb-4">
+
+            <!--Section heading-->
+            <h2
+                class="text-center h1-responsive font-weight-bold text-center my-4 text-center w-responsive mx-auto mb-5">
+                Contact us</h2>
+            <!--Section description-->
+
+            <div class="row">
+
+                <div class="col-sm status" style="color: red;">
+                </div>
+            </div>
+            <div class="row" style="
+    width: 100%;
+">
+
+                <!--Grid column-->
+                <div class="col-sm">
+                    <form id="contact-form" name="contact-form"   action="https://formspree.io/f/xjvlvrkq"
+                    method="POST" >
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Your name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Your email</label>
+                                    <input type="text" id="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="address" class="">Address</label>
+                                    <input type="text" id="address" name="address" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                          <!--Grid row-->
+                          <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="city" class="">city</label>
+                                    <input type="text" id="city" name="city" class="form-control" required>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="postalcode" class="">Postal Code</label>
+                                    <input type="text" id="postalcode" name="postalcode" class="form-control" required>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        
+                        <div class="row" >
+                            <div class="col-md-6" style="margin-top: 20px;">
+                                
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked 
+                                    onclick="radiobutton_Clicked('btnradio1');">
+                                    <label class="btn btn-outline-primary" for="btnradio1">Comment</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" 
+                                    onclick="radiobutton_Clicked('btnradio2');">
+                                    <label class="btn btn-outline-primary" for="btnradio2">Question</label>
+                                  
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" 
+                                    onclick="radiobutton_Clicked('btnradio3');">
+                                    <label class="btn btn-outline-primary" for="btnradio3">Hiring</label>
+                                  </div>
+                                 
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="md-form hiring"> 
+                                    <label for="rate">Hourly Rate</label>
+                                    <input type="number" id="rate" name="rate" class="form-control">
+                                </div>
+
+
+                            </div>
+
+                        
+                        </div>
+                     
+
+                        <!--Grid row-->
+                        <div class="row" id="rwComment">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="comment">Comment</label>
+                                    <textarea type="text" id="comment" name="comment" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                         <!--Grid row-->
+                         <div class="row" id="rwQuestion">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="question">Question</label>
+                                    <textarea type="text" id="question" name="question" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                       
+                    </form>
+
+                    <div class="text-center text-md-left" style="margin-top: 20px;">
+                        <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                    </div>
+                   
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+
+
+    </div>
+
+
+
+</body>
+
+</html>
+<script type="text/javascript" src="contact.js"></script>
